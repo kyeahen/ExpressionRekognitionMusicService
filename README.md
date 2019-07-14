@@ -17,7 +17,7 @@
 
    해당 세션은 iOS 어플리케이션을 구현할 예정이기 때문에 Xode 설치 및 CocoaPods 설치가 필요합니다. 가이드를 참고하여 설치해주시기 바랍니다.
 
-   - Xcode 설치하기 [이동]()
+   - Xcode 설치하기 [이동](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/Xcode%20%EC%84%A4%EC%B9%98%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
 
 
 3. **코드 편집기 설치**
@@ -36,7 +36,7 @@
 
 - [Rekognition](https://ap-northeast-2.console.aws.amazon.com/rekognition/home?region=ap-northeast-2#/) : 딥러닝 기반 시각 분석 서비스
 
-  -우리는 **얼굴 분석 기술**을 사용할 예정입니다. [이동](https://ap-northeast-2.console.aws.amazon.com/rekognition/home?region=ap-northeast-2#/face-detection)
+  -우리는 **얼굴 분석 기술**을 사용할 예정입니다. [자세히 알아보기](https://ap-northeast-2.console.aws.amazon.com/rekognition/home?region=ap-northeast-2#/face-detection)
   
 #### Front-End : iOS
 
@@ -53,15 +53,12 @@
 
 ### [다음 목차]
 
-- [Rekognition 생성하기]()
+- [IAM 생성하기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/Rekognition%20%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0.md)
+- [EC2 생성하기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/%EB%AC%B4%EC%A0%9C.md)
+- [EC2에 AWS CLI 설치하기]()
 
-- [node.js로 API 만들기]()
-
-- [iOS 네트워킹 통신하기]()
-
-  
-
-
-
-
+- [node.js로 RESTAPI 만들기]()
+- [EC2에 서버 배포하기]()
+- [iOS 네트워크 통신하기]()
+- [삭제 가이드]
 

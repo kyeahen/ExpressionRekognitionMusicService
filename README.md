@@ -21,7 +21,8 @@
 
 3. **코드 편집기 설치**
 
-   해당 세션에서 Back-End 개발 시, 코드 편집기를 사용할 예정이기 때문에 코드 편집기 설치가 필요합니다. (발표자는 **Visual Studio Code**를 사용할 예정입니다.) 
+   해당 세션에서 Back-End 개발 시, 코드 편집기를 사용할 예정이기 때문에 코드 편집기 설치가 필요합니다. <br/>
+   (발표자는 **Visual Studio Code**를 사용할 예정입니다.) 
 
    - Visual Studio Code [설치](https://code.visualstudio.com/)  **적극 추천:-)**
    - Atom [설치](https://atom.io/)
@@ -29,7 +30,7 @@
 
 ------
 
-### [사용 기술]
+### [사용 기술 소개]
 
 #### AWS
 
@@ -41,6 +42,7 @@
 
 - [Alamofire](https://github.com/Alamofire/Alamofire) : iOS 네트워킹 라이브러리
 - [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON) : JSON 파싱 자동화 라이브러리
+- [Kingfisher](https://github.com/onevcat/Kingfisher) : 이미지 다운로드 및 캐싱 라이브러리
 
 #### Back-End : Node.js
 
@@ -52,12 +54,11 @@
 
 ### [다음 목차]
 
-- [IAM 생성하기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/Rekognition%20%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0.md)
-- [EC2 생성하기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/%EB%AC%B4%EC%A0%9C.md)
-- [EC2에 AWS CLI 설치하기]()
-
-- [node.js로 RESTAPI 만들기]()
-- [EC2에 서버 배포하기]()
-- [iOS 네트워크 통신하기]()
+- [IAM 생성하기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/IAM%20%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0.md)
+- [AWS EC2 생성하기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/AWS%20EC2%20%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0.md)
+- [EC2에 AWS CLI 설치하기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/EC2%EC%97%90%20AWS%20CLI%20%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0.md)
+- [node.js로 RESTAPI 만들기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/node.js%EB%A1%9C%20API%20%EB%A7%8C%EB%91%98%EA%B8%B0.md)
+- [EC2에 서버 배포하기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/EC2%EC%97%90%20%EC%84%9C%EB%B2%84%20%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0.md)
+- [iOS 네트워크 통신하기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/iOS%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9%20%ED%86%B5%EC%8B%A0%ED%95%98%EA%B8%B0.md)
 - [삭제 가이드]()
 

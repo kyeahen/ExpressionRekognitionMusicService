@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22BC97D122D9DA65000943FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC97D022D9DA65000943FD /* AppDelegate.swift */; };
+		22BC97D622D9DA65000943FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BC97D422D9DA65000943FD /* Main.storyboard */; };
+		22BC97D822D9DA66000943FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22BC97D722D9DA66000943FD /* Assets.xcassets */; };
+		22BC97DB22D9DA66000943FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BC97D922D9DA66000943FD /* LaunchScreen.storyboard */; };
+		22BC97E322D9E0A2000943FD /* MusicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC97E222D9E0A2000943FD /* MusicCollectionViewCell.swift */; };
+		22BC97E522D9E0B1000943FD /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC97E422D9E0B1000943FD /* MusicViewController.swift */; };
+		22BC97E722D9E0BA000943FD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC97E622D9E0BA000943FD /* MainViewController.swift */; };
+		22BC97EB22DA4570000943FD /* ImageUploadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC97EA22DA4570000943FD /* ImageUploadService.swift */; };
+		22BC97ED22DA50EE000943FD /* MusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC97EC22DA50EE000943FD /* MusicService.swift */; };
+		22BC97F022DA5284000943FD /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC97EF22DA5284000943FD /* Music.swift */; };
+		77E35861D264C00321875DA1 /* Pods_ExpressionRekognitionMusicService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB6BAF8BBE32040A19DF836 /* Pods_ExpressionRekognitionMusicService.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0045C8DFFD4051531A2BCDCC /* Pods-ExpressionRekognitionMusicService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpressionRekognitionMusicService.debug.xcconfig"; path = "Target Support Files/Pods-ExpressionRekognitionMusicService/Pods-ExpressionRekognitionMusicService.debug.xcconfig"; sourceTree = "<group>"; };
+		0AB6BAF8BBE32040A19DF836 /* Pods_ExpressionRekognitionMusicService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpressionRekognitionMusicService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22BC97CD22D9DA65000943FD /* ExpressionRekognitionMusicService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpressionRekognitionMusicService.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22BC97D022D9DA65000943FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22BC97D522D9DA65000943FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22BC97D722D9DA66000943FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22BC97DA22D9DA66000943FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22BC97DC22D9DA66000943FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22BC97E222D9E0A2000943FD /* MusicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCollectionViewCell.swift; sourceTree = "<group>"; };
+		22BC97E422D9E0B1000943FD /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		22BC97E622D9E0BA000943FD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		22BC97EA22DA4570000943FD /* ImageUploadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploadService.swift; sourceTree = "<group>"; };
+		22BC97EC22DA50EE000943FD /* MusicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicService.swift; sourceTree = "<group>"; };
+		22BC97EF22DA5284000943FD /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		FFD20531D726B6C1698564E9 /* Pods-ExpressionRekognitionMusicService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpressionRekognitionMusicService.release.xcconfig"; path = "Target Support Files/Pods-ExpressionRekognitionMusicService/Pods-ExpressionRekognitionMusicService.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22BC97CA22D9DA65000943FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77E35861D264C00321875DA1 /* Pods_ExpressionRekognitionMusicService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22BC97C422D9DA65000943FD = {
+			isa = PBXGroup;
+			children = (
+				22BC97CF22D9DA65000943FD /* ExpressionRekognitionMusicService */,
+				22BC97CE22D9DA65000943FD /* Products */,
+				C128916AB891B74647719C3F /* Pods */,
+				758F7F52DD547FDA60BED6EB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		22BC97CE22D9DA65000943FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22BC97CD22D9DA65000943FD /* ExpressionRekognitionMusicService.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22BC97CF22D9DA65000943FD /* ExpressionRekognitionMusicService */ = {
+			isa = PBXGroup;
+			children = (
+				22BC97D022D9DA65000943FD /* AppDelegate.swift */,
+				22BC97EE22DA5262000943FD /* Model */,
+				22BC97E922DA454D000943FD /* Service */,
+				22BC97E822D9E0C1000943FD /* ViewController */,
+				22BC97F122DB0729000943FD /* Storyboard */,
+				22BC97D722D9DA66000943FD /* Assets.xcassets */,
+				22BC97DC22D9DA66000943FD /* Info.plist */,
+			);
+			path = ExpressionRekognitionMusicService;
+			sourceTree = "<group>";
+		};
+		22BC97E822D9E0C1000943FD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				22BC97E622D9E0BA000943FD /* MainViewController.swift */,
+				22BC97E422D9E0B1000943FD /* MusicViewController.swift */,
+				22BC97E222D9E0A2000943FD /* MusicCollectionViewCell.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		22BC97E922DA454D000943FD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				22BC97EA22DA4570000943FD /* ImageUploadService.swift */,
+				22BC97EC22DA50EE000943FD /* MusicService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		22BC97EE22DA5262000943FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22BC97EF22DA5284000943FD /* Music.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22BC97F122DB0729000943FD /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				22BC97D422D9DA65000943FD /* Main.storyboard */,
+				22BC97D922D9DA66000943FD /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		758F7F52DD547FDA60BED6EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AB6BAF8BBE32040A19DF836 /* Pods_ExpressionRekognitionMusicService.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C128916AB891B74647719C3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0045C8DFFD4051531A2BCDCC /* Pods-ExpressionRekognitionMusicService.debug.xcconfig */,
+				FFD20531D726B6C1698564E9 /* Pods-ExpressionRekognitionMusicService.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22BC97CC22D9DA65000943FD /* ExpressionRekognitionMusicService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22BC97DF22D9DA66000943FD /* Build configuration list for PBXNativeTarget "ExpressionRekognitionMusicService" */;
+			buildPhases = (
+				F59F86F6B05CB1E73A4CD312 /* [CP] Check Pods Manifest.lock */,
+				22BC97C922D9DA65000943FD /* Sources */,
+				22BC97CA22D9DA65000943FD /* Frameworks */,
+				22BC97CB22D9DA65000943FD /* Resources */,
+				9317C9F0E0CCE570D61C429C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExpressionRekognitionMusicService;
+			productName = FacialRecognitionMusicService;
+			productReference = 22BC97CD22D9DA65000943FD /* ExpressionRekognitionMusicService.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22BC97C522D9DA65000943FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = kyeahen;
+				TargetAttributes = {
+					22BC97CC22D9DA65000943FD = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 22BC97C822D9DA65000943FD /* Build configuration list for PBXProject "ExpressionRekognitionMusicService" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22BC97C422D9DA65000943FD;
+			productRefGroup = 22BC97CE22D9DA65000943FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22BC97CC22D9DA65000943FD /* ExpressionRekognitionMusicService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22BC97CB22D9DA65000943FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22BC97DB22D9DA66000943FD /* LaunchScreen.storyboard in Resources */,
+				22BC97D822D9DA66000943FD /* Assets.xcassets in Resources */,
+				22BC97D622D9DA65000943FD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9317C9F0E0CCE570D61C429C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExpressionRekognitionMusicService/Pods-ExpressionRekognitionMusicService-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExpressionRekognitionMusicService/Pods-ExpressionRekognitionMusicService-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F59F86F6B05CB1E73A4CD312 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExpressionRekognitionMusicService-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22BC97C922D9DA65000943FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22BC97E522D9E0B1000943FD /* MusicViewController.swift in Sources */,
+				22BC97ED22DA50EE000943FD /* MusicService.swift in Sources */,
+				22BC97E322D9E0A2000943FD /* MusicCollectionViewCell.swift in Sources */,
+				22BC97D122D9DA65000943FD /* AppDelegate.swift in Sources */,
+				22BC97F022DA5284000943FD /* Music.swift in Sources */,
+				22BC97EB22DA4570000943FD /* ImageUploadService.swift in Sources */,
+				22BC97E722D9E0BA000943FD /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		22BC97D422D9DA65000943FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22BC97D522D9DA65000943FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		22BC97D922D9DA66000943FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22BC97DA22D9DA66000943FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22BC97DD22D9DA66000943FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22BC97DE22D9DA66000943FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22BC97E022D9DA66000943FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0045C8DFFD4051531A2BCDCC /* Pods-ExpressionRekognitionMusicService.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3H456VQ6Y;
+				INFOPLIST_FILE = "$(SRCROOT)/ExpressionRekognitionMusicService/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ausg.seminar.ExpressionRekognitionMusicService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22BC97E122D9DA66000943FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFD20531D726B6C1698564E9 /* Pods-ExpressionRekognitionMusicService.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3H456VQ6Y;
+				INFOPLIST_FILE = "$(SRCROOT)/ExpressionRekognitionMusicService/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ausg.seminar.ExpressionRekognitionMusicService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22BC97C822D9DA65000943FD /* Build configuration list for PBXProject "ExpressionRekognitionMusicService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22BC97DD22D9DA66000943FD /* Debug */,
+				22BC97DE22D9DA66000943FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22BC97DF22D9DA66000943FD /* Build configuration list for PBXNativeTarget "ExpressionRekognitionMusicService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22BC97E022D9DA66000943FD /* Debug */,
+				22BC97E122D9DA66000943FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22BC97C522D9DA65000943FD /* Project object */;
+}

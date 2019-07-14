@@ -13,7 +13,7 @@
         <!--AUSGMUSIC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="FacialRekognitionMusicService" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="ExpressionRekognitionMusicService" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,7 +73,7 @@
         <!--좋아할 것 같아서-->
         <scene sceneID="kcd-sK-Cra">
             <objects>
-                <viewController storyboardIdentifier="MusicViewController" id="Kbp-6D-g1F" customClass="MusicViewController" customModule="FacialRekognitionMusicService" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MusicViewController" id="Kbp-6D-g1F" customClass="MusicViewController" customModule="ExpressionRekognitionMusicService" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gam-k3-3EA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,7 +88,7 @@
                                     <inset key="sectionInset" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MusicCollectionViewCell" id="cok-uj-luP" customClass="MusicCollectionViewCell" customModule="FacialRekognitionMusicService" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MusicCollectionViewCell" id="cok-uj-luP" customClass="MusicCollectionViewCell" customModule="ExpressionRekognitionMusicService" customModuleProvider="target">
                                         <rect key="frame" x="5" y="0.0" width="175" height="240"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -162,7 +162,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zej-vK-eBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2001" y="-564"/>
+            <point key="canvasLocation" x="1866" y="-564"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ryp-zC-uqF">

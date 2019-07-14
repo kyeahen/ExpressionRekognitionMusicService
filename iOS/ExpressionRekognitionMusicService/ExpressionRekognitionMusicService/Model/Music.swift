@@ -6,8 +6,6 @@
 //  Copyright © 2019 kyeahen. All rights reserved.
 //
 
-import Foundation
-
 struct Music: Codable {
     let id : Int
     let singer : String

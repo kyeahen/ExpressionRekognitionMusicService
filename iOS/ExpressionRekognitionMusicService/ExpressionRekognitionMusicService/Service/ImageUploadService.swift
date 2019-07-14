@@ -10,11 +10,11 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-struct ImageUploadService {
+struct ImageUploadService: APIService {
     
     //MARK: 표정 인식 API
     static func postImage(image: UIImage, completion: @escaping (_ result: String) -> Void) {
-        let URL = "http://13.125.249.142:3000/api/rekognition"
+        let URL = url(api/rekognition)
 
         let imageData = image.jpegData(compressionQuality: 0.3)
         

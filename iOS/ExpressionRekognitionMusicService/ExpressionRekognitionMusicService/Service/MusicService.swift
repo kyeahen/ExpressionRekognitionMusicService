@@ -7,7 +7,6 @@
 //
 
 import Alamofire
-import SwiftyJSON
 
 struct MusicService {
     
@@ -26,9 +25,7 @@ struct MusicService {
                     
                     do {
                         let musicData = try decoder.decode([Music].self, from: value)
-//                        let JSON = res.result.value as! [[String: Any]]
                         completion(musicData)
-                        
                         print(musicData)
                         
                     } catch {

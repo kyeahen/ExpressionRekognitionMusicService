@@ -17,6 +17,7 @@
 		22BC97EB22DA4570000943FD /* ImageUploadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC97EA22DA4570000943FD /* ImageUploadService.swift */; };
 		22BC97ED22DA50EE000943FD /* MusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC97EC22DA50EE000943FD /* MusicService.swift */; };
 		22BC97F022DA5284000943FD /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC97EF22DA5284000943FD /* Music.swift */; };
+		22BC97F322DB47D8000943FD /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC97F222DB47D8000943FD /* APIService.swift */; };
 		77E35861D264C00321875DA1 /* Pods_ExpressionRekognitionMusicService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB6BAF8BBE32040A19DF836 /* Pods_ExpressionRekognitionMusicService.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		22BC97EA22DA4570000943FD /* ImageUploadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploadService.swift; sourceTree = "<group>"; };
 		22BC97EC22DA50EE000943FD /* MusicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicService.swift; sourceTree = "<group>"; };
 		22BC97EF22DA5284000943FD /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		22BC97F222DB47D8000943FD /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		FFD20531D726B6C1698564E9 /* Pods-ExpressionRekognitionMusicService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpressionRekognitionMusicService.release.xcconfig"; path = "Target Support Files/Pods-ExpressionRekognitionMusicService/Pods-ExpressionRekognitionMusicService.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 		22BC97E922DA454D000943FD /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				22BC97F222DB47D8000943FD /* APIService.swift */,
 				22BC97EA22DA4570000943FD /* ImageUploadService.swift */,
 				22BC97EC22DA50EE000943FD /* MusicService.swift */,
 			);
@@ -265,6 +268,7 @@
 				22BC97D122D9DA65000943FD /* AppDelegate.swift in Sources */,
 				22BC97F022DA5284000943FD /* Music.swift in Sources */,
 				22BC97EB22DA4570000943FD /* ImageUploadService.swift in Sources */,
+				22BC97F322DB47D8000943FD /* APIService.swift in Sources */,
 				22BC97E722D9E0BA000943FD /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

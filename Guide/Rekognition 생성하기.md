@@ -1,28 +1,20 @@
-# Rekognition 생성하기
-
-[TOC]
-
-------
-
-
-
-### 1. IAM 생성하기
+# IAM 생성하기
 
 Amazon Rekognition 같은 AWS 서비스를 사용하려면 액세스할 때 자격 증명을 제공해야 합니다. 이를 통해 서비스가 소유한 리소스에 액세스할 수 있는 권한이 있는지를 확인합니다.
 
-<br/>
+
 
 * **IAM** 검색
 
-![스크린샷 2019-07-13 오후 3.54.10](/Users/kyeahen/Desktop/스크린샷 2019-07-13 오후 3.54.10.png)
+![iam_search](/Users/kyeahen/Desktop/AWS-Rekognition-iOS/AWS-Rekognition-iOS/Guide/iam_search.png)
 
-<br/>
+
 
 * **IAM** 생성
 
   목차에서 **사용자** 선택 후, **사용자 추가** 버튼을 선택해주세요.
 
-![image-20190713155711545](/Users/kyeahen/Library/Application Support/typora-user-images/image-20190713155711545.png)
+![iam_add](/Users/kyeahen/Desktop/AWS-Rekognition-iOS/AWS-Rekognition-iOS/Guide/iam_add.png)
 
 <br/>
 

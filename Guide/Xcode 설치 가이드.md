@@ -1,26 +1,18 @@
 # Xcode 설치 가이드
 
-[TOC]
-
-------
-
-
-
 ### 1. Xcode 설치
 
 * **앱스토어**로 이동
 
-  ![appstore_page](/Users/kyeahen/Desktop/appstore_page.png)
-
-
+  ![appstore_page](/Users/kyeahen/Desktop/ExpressionRekognitionMusicService/ExpressionRekognitionMusicService/Guide/images/appstore_page.png)
+  
+  
 
 * **Xcode** 검색
 
   설치 버튼을 눌러 설치를 해주시면 됩니다. 시간이 꽤 소요되니 조금만 기다려주세요.
 
-  ![xcode_page](/Users/kyeahen/Desktop/xcode_page.png)
-
-​		
+  ![xcode_page](/Users/kyeahen/Desktop/ExpressionRekognitionMusicService/ExpressionRekognitionMusicService/Guide/images/xcode_page.png)
 
 ------
 
@@ -48,7 +40,7 @@
 $ sudo gem install cocoapods
 ```
 
-![스크린샷 2019-07-13 오후 3.14.22](/Users/kyeahen/Desktop/스크린샷 2019-07-13 오후 3.14.22.png)
+![cocoapods_terminal](/Users/kyeahen/Desktop/ExpressionRekognitionMusicService/ExpressionRekognitionMusicService/Guide/images/cocoapods_terminal.png))
 
 
 

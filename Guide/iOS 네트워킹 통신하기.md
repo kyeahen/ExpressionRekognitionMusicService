@@ -6,9 +6,9 @@
 
   이 프로젝트로 세미나를 이어서 진행해볼게요!
 
-  iOS 폴더** 안에 프로젝트가 있습니다.
+  **iOS 폴더** 안에 프로젝트가 있습니다.
 
-  
+  <br/>
 
 * 시간 관계 상 **네트워킹 위주**로 진행하도록 하겠습니다.
 
@@ -18,7 +18,7 @@
 
 
 
-##### 1단계 : 프로젝트 세팅하기
+### 1단계 : 프로젝트 세팅하기
 
 * 터미널 상에서 **iOS > ExpressionRekognitionMusicService**로 이동해주세요.
 
@@ -36,11 +36,13 @@ $ pod install
 
   **ExpressionRekognitionMusicService.xcworkspace** 파일을 열어주세요.
 
-  사진추가!!
+![iOS-2](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/iOS-2.png)
+  
 
 <br/>
 
-##### 2단계 : 통신 파일 작성하기
+
+### 2단계 : 통신 파일 작성하기
 
 
 
@@ -58,7 +60,7 @@ extension APIService {
 }
 ```
 
-
+<br/>
 
 * **ImageUploadService.swift**
 
@@ -112,7 +114,7 @@ struct ImageUploadService: APIService {
 }
 ```
 
-
+  <br/>
 
 * **Music.swift**
 
@@ -126,7 +128,7 @@ struct Music: Codable {
 }
 ```
 
-
+ <br/>
 
 * **MusicService.swift**
 
@@ -168,21 +170,21 @@ struct MusicService {
 }
 ```
 
+  <br/>
 
+### 3단계 : 앱 실행하기
 
-##### 3단계 : 앱 실행하기
+* 자신의 **디바이스**를 연결하거나 **시뮬레이터**를 선택해주세요.
 
-* 자신의 디바이스를 연결하거나 시뮬레이터를 선택해주세요.
+![iOS3](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/iOS3.png)
 
-사진!
+* **Cmd + R** 또는 아래 사진의 ▶️ 버튼을 누르면 앱이 실행됩니다.
 
-* Cmd + R 또는 아래 사진의 ▶️ 버튼을 누르면 앱이 실행됩니다.
+![iOS4](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/iOS4.png)
 
-사진!
+  <br/>
 
-
-
-##### 4단계 :  앱 완성!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+### 4단계 :  앱 완성!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 동영상 넣기
 

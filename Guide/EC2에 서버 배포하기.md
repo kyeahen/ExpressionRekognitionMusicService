@@ -20,7 +20,7 @@ $ scp -i [pem파일경로] [압축한 파일 이름] ubuntu@[ec2 instance의 pub
 
 <br/>
 
-#####3단계 : [원격 터미널] 업로드한 프로젝트 압축 파일 풀기
+### 3단계 : [원격 터미널] 업로드한 프로젝트 압축 파일 풀기
 
 ```
 $ ls //파일이 업로드 되었는지 확인해보세요.
@@ -60,5 +60,5 @@ $ npm start
 
 ### [다음 목차]
 
-- [iOS 네트워크 통신하기]()
+- [iOS 네트워크 통신하기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/iOS%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9%20%ED%86%B5%EC%8B%A0%ED%95%98%EA%B8%B0.md)
 - [삭제 가이드]()

@@ -4,7 +4,7 @@
 
 * **앱스토어**로 이동
 
-  ![appstore_page](/Users/kyeahen/Desktop/ExpressionRekognitionMusicService/ExpressionRekognitionMusicService/Guide/images/appstore_page.png)
+  ![appstore_page](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/appstore_page.png)
   
   
 
@@ -12,7 +12,7 @@
 
   설치 버튼을 눌러 설치를 해주시면 됩니다. 시간이 꽤 소요되니 조금만 기다려주세요.
 
-  ![xcode_page](/Users/kyeahen/Desktop/ExpressionRekognitionMusicService/ExpressionRekognitionMusicService/Guide/images/xcode_page.png)
+  ![xcode_page](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/xcode_page.png)
 
 ------
 
@@ -40,7 +40,7 @@
 $ sudo gem install cocoapods
 ```
 
-![cocoapods_terminal](/Users/kyeahen/Desktop/ExpressionRekognitionMusicService/ExpressionRekognitionMusicService/Guide/images/cocoapods_terminal.png))
+![cocoapods_terminal](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/cocoapods_terminal.png)
 
 
 

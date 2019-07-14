@@ -29,7 +29,7 @@ $ npm init
 
 <br/>
 
-##### 1단계 : node express 추가하기
+#### 1단계 : node express 추가하기
 
 ```
 $ npm install express --save
@@ -49,7 +49,7 @@ $ express
 
 <br/>
 
-##### 2단계 : 추가 node module 추가하기
+#### 2단계 : 추가 node module 추가하기
 
 ```
 $ npm install fs-extra klaw-sync multer --save
@@ -57,7 +57,7 @@ $ npm install fs-extra klaw-sync multer --save
 
 <br/>
 
-##### 3단계 : 프로젝트 열기
+#### 3단계 : 프로젝트 열기
 
 * 앞서 다운받은 코드편집기를 통해 프로젝트(aws-reko-server)를 열어주세요!
 
@@ -65,7 +65,7 @@ $ npm install fs-extra klaw-sync multer --save
 
 <br/>
 
-##### 4단계 : .js 파일 추가하기
+#### 4단계 : .js 파일 추가하기
 
 ‼️ **Routes 폴더 하위**에 아래의 파일들을 추가해주세요.
 
@@ -146,7 +146,7 @@ createCollection();
 indexFaces();
 ```
 
-
+<br/>
 
 * **index.js** - 코드 주석 달기
 
@@ -212,7 +212,7 @@ var getBestEmotion = function(data) {
 module.exports = router;
 ```
 
-
+<br/>
 
 * **config.js** - 코드 주석 달기
 

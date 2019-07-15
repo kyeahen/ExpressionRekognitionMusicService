@@ -6,6 +6,8 @@
 
 ![cli-1](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/cli-1.png)
 
+<br/>
+
 - 연결을 클릭하면 아래의 사진이 뜹니다.
 
 ![cli-2](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/cli-2.png)
@@ -14,7 +16,7 @@
 
   자신의 <u>키페어 파일이 저장되어있는 경로</u>에서 첫번째 명령어를 입력해야겠죠?
 
-  pem 파일 경로에 **""**를 붙이지 않으셔도 됩니다!
+  **pem 파일 경로에 " "를 붙이지 않으셔도 됩니다!**
   
   저는 가시성 있게 하기 위해서 붙인 겁니다!
 
@@ -42,11 +44,15 @@ $ ssh -i [키페어 파일 경로] ubuntu@[Ec2 인스턴스 퍼블릭 DNS]
 $ curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
 ```
 
+<br/>
+
 **2. 패키지 압축 풀기**
 
 ```
 $ unzip awscli-bundle.zip
 ```
+
+<br/>
 
 **3. 설치 프로그램 실행**
 
@@ -93,7 +99,6 @@ $ cat credentials
 
 ##  🚩 다음 목차
 
-- [node.js로 API 만들기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/node.js%EB%A1%9C%20API%20%EB%A7%8C%EB%91%98%EA%B8%B0.md)
 - [EC2에 서버 배포하기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/EC2%EC%97%90%20%EC%84%9C%EB%B2%84%20%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0.md)
 - [iOS 네트워크 통신하기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/iOS%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9%20%ED%86%B5%EC%8B%A0%ED%95%98%EA%B8%B0.md)
 - [삭제 가이드]()

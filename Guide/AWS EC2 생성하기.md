@@ -86,13 +86,15 @@
 
 <br/>
 
+#### ❗️8단계 : 키페어 생성 및 선택
+
 * **새 키페어 생성**을 선택해주세요.
 
-* 키 페어 이름을 **aws-reko-server-key**로 설정해주세요.
+* 키 페어 이름을 **aws-reko-server-key**로 설정하는 것을 추천드려요!
 
 * 키페어 다운로드를 해주세요. **지금 다운로드 받은 후, 다시 다운로드 받으실 수 없으니 주의하세요!**
 
-  <u>자신이 기억할 수 있는 경로에 저장하시면 됩니다. **Desktop**이 가장 무난하겠죠?</u>
+  자신이 기억할 수 있는 경로에 저장하시면 됩니다. 
 
 * 키페어 다운로드가 완료되셨다면, **인스턴스 시작**을 클릭해주세요.
 
@@ -107,7 +109,6 @@
 ## 🚩 다음 목차
 
 - [EC2에 AWS CLI 설치하기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/EC2%EC%97%90%20AWS%20CLI%20%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0.md)
-- [node.js로 API 만들기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/node.js%EB%A1%9C%20API%20%EB%A7%8C%EB%91%98%EA%B8%B0.md)
 - [EC2에 서버 배포하기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/EC2%EC%97%90%20%EC%84%9C%EB%B2%84%20%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0.md)
 - [iOS 네트워크 통신하기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/iOS%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9%20%ED%86%B5%EC%8B%A0%ED%95%98%EA%B8%B0.md)
 - [삭제 가이드]()

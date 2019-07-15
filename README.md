@@ -20,7 +20,7 @@
    해당 세션은 iOS 어플리케이션을 구현할 예정이기 때문에 Xode 설치 및 CocoaPods 설치가 필요합니다. 가이드를 참고하여 설치해주시기 바랍니다.
 
    - Xcode 설치하기 [이동](https://github.com/AUSG/ausg-seminar-2019/tree/master/iOSTrack/Preparation)
-   - CocoaPods 설치하기 [이동](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/CocoaPods 설치 가이드.md)
+   - CocoaPods 설치하기 [이동](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/CocoaPods%20%EC%84%A4%EC%B9%98%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
 
 
 3. **코드 편집기 설치**

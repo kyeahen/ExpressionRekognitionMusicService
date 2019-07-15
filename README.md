@@ -40,19 +40,24 @@
 
 - [Rekognition](https://ap-northeast-2.console.aws.amazon.com/rekognition/home?region=ap-northeast-2#/) : 딥러닝 기반 시각 분석 서비스
   - 우리는 **얼굴 분석 기술**을 사용할 예정입니다. [자세히 알아보기](https://ap-northeast-2.console.aws.amazon.com/rekognition/home?region=ap-northeast-2#/face-detection)
+  
 - [IAM](https://aws.amazon.com/ko/iam/) : AWS 리소스에 대한 액세스를 안전하게 관리할 수 있게 해주는 서비스
+
 - [AWS CLI](https://aws.amazon.com/ko/cli/) : AWS 서비스를 관리하는 통합 도구
+
 - [EC2](https://aws.amazon.com/ko/ec2/?nc2=h_m1) : AWS 상에서 크기를 조절 가능한 컴퓨팅 파워를 제공하는 웹 서비스
+
 #### Front-End : iOS
 
 - [Alamofire](https://github.com/Alamofire/Alamofire) : iOS 네트워킹 라이브러리
+
 - [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON) : JSON 파싱 자동화 라이브러리
+
 - [Kingfisher](https://github.com/onevcat/Kingfisher) : 이미지 다운로드 및 캐싱 라이브러리
 
 #### Back-End : Node.js
 
 - [Express](https://github.com/expressjs/express) : Web 어플리케이션 프레임워크
-
   - Web 응용 프로그램을 위한 기본적인 시스템이 구축되어 있습니다.
 
 ------

@@ -20,17 +20,18 @@ $ scp -i [pem 파일 경로] [압축한 파일 이름] ubuntu@[ec2 인스턴스�
 
 * **ec2 instance의 public DNS**는 AWS EC2 페이지에서 찾으실 수 있습니다.
 
-![public_dns](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/cocoapods_terminal.png)
+![public_dns](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/public_dns.png)
 
-* 터미널 예시
+<br/>
+* **터미널 예시**
 
   **pem 파일 경로**와 **다운받은 프로젝트 서버 압축 파일 경로**를 잘 확인하세요!
 
-  pem 파일 경로에 **""**를 붙이지 않으셔도 됩니다!
+  pem 파일 경로에 " "를 붙이지 않으셔도 됩니다!
 
   저는 가시성 있게 하기 위해서 붙인 겁니다!
 
-![scp](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/cocoapods_terminal.png)
+![scp](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/scp.png)
 
 <br/>
 
@@ -40,7 +41,7 @@ $ scp -i [pem 파일 경로] [압축한 파일 이름] ubuntu@[ec2 인스턴스�
 $ ssh -i [pem 파일 경로] ubuntu@[ec2 인스턴스의 퍼블릭 DNS]
 ```
 
-![ssh](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/cocoapods_terminal.png)
+![ssh](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/ssh.png)
 
 <br/>
 
@@ -52,7 +53,7 @@ $ sudo apt install unzip
 $ unzip aws-reko-sever.zip
 ```
 
-![node_unzip](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/cocoapods_terminal.png)
+![node_unzip](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/node_unzip.png)
 
 <br/>
 
@@ -78,13 +79,13 @@ $ npm install
 $ npm start
 ```
 
-![ec2_npm_start](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/cocoapods_terminal.png)
+![ec2_npm_start](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/npm_start.png)
 
-* http:// [ec2 퍼블릭 DNS or IPv4 퍼블릭 IP] :3000/api/rekognition 으로 접속해보세요!
+* **http:// [ec2 퍼블릭 DNS or IPv4 퍼블릭 IP] :3000/api/rekognition** 으로 접속해보세요!
 
   배포가 잘되었다면 터미널에서 로그를 확인할 수 있습니다.
 
-![ec2_log](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/cocoapods_terminal.png)
+![ec2_log](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/ec2_log.png)
 
 <br/>
 

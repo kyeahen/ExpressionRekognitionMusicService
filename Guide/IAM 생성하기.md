@@ -38,7 +38,7 @@
 
 <br/>
 
-### 1단계 : 사용자 세부 정보 설정
+### ❗️1단계 : 사용자 세부 정보 설정
 
 - 사용자 이름은 아래와 같이 **AWS-Reko-iOS**로 설정해주세요.
 - AWS 액세스 유형은 **프로그래밍 방식 액세스**를 선택해주세요.
@@ -47,7 +47,7 @@
 
 <br/>
 
-### 2단계 : 권한 추가
+### ❗️2단계 : 권한 추가
 
 - **기존 정책 직접 연결**을 선택해주세요.
 
@@ -69,7 +69,7 @@
 
 <br/>
 
-### 3단계 : 태그 추가 (선택사항)
+### ❗️3단계 : 태그 추가 (선택사항)
 
 * **다음**을 클릭해주세요.
 
@@ -77,7 +77,7 @@
 
 <br/>
 
-### 4단계 : 검토
+### ❗️4단계 : 검토
 
 * 아래의 사진과 동일한다면 **사용자 만들기**를 클릭해주세요.
 
@@ -85,7 +85,7 @@
 
 <br/>
 
-### 5단계 : 완료
+### ❗️5단계 : 완료
 
 * **.csv 파일**을 꼭! 다운로드해주세요. 지금이 다운받을 수 있는 마지막 기회입니다.
 
@@ -99,13 +99,15 @@
 
 <br/>
 
-------
+---------
 
-### [다음 목차]
+<br/>
+
+## 🚩 다음 목차
 
 - [AWS EC2 생성하기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/AWS%20EC2%20%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0.md)
 - [EC2에 AWS CLI 설치하기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/EC2%EC%97%90%20AWS%20CLI%20%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0.md)
-- [node.js로 RESTAPI 만들기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/node.js%EB%A1%9C%20API%20%EB%A7%8C%EB%91%98%EA%B8%B0.md)
+- [node.js로 API 만들기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/node.js%EB%A1%9C%20API%20%EB%A7%8C%EB%91%98%EA%B8%B0.md)
 - [EC2에 서버 배포하기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/EC2%EC%97%90%20%EC%84%9C%EB%B2%84%20%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0.md)
 - [iOS 네트워크 통신하기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/iOS%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9%20%ED%86%B5%EC%8B%A0%ED%95%98%EA%B8%B0.md)
 - [삭제 가이드]()

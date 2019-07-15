@@ -18,7 +18,7 @@
 
 
 
-### 1단계 : 프로젝트 세팅하기
+### ❗️1단계 : 프로젝트 세팅하기
 
 * 터미널 상에서 **iOS > ExpressionRekognitionMusicService**로 이동해주세요.
 
@@ -37,16 +37,16 @@ $ pod install
   **ExpressionRekognitionMusicService.xcworkspace** 파일을 열어주세요.
 
 ![iOS-2](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/iOS-2.png)
-  
+
 
 <br/>
 
 
-### 2단계 : 통신 파일 작성하기
+### ❗️2단계 : 통신 파일 작성하기
 
 
 
-* **APIService.swfit**
+* **APIService.swift**
 
 ```swift
 protocol APIService {
@@ -109,8 +109,6 @@ struct ImageUploadService: APIService {
             }
         }
     }
-    
-    
 }
 ```
 
@@ -172,7 +170,7 @@ struct MusicService {
 
   <br/>
 
-### 3단계 : 앱 실행하기
+### ❗️3단계 : 앱 실행하기
 
 * 자신의 **디바이스**를 연결하거나 **시뮬레이터**를 선택해주세요.
 
@@ -184,13 +182,15 @@ struct MusicService {
 
   <br/>
 
-### 4단계 :  앱 완성!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+### ❗️4단계 :  앱 완성
 
 동영상 넣기
 
---------------
+----------
 
-### [다음 목차]
+<br/>
+
+## 🚩 다음 목차
 
 - [삭제 가이드]()
 

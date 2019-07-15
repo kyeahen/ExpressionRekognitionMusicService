@@ -1,6 +1,6 @@
 # node.js로 API 만들기
 
-### 1. node.js 설치하기
+### 🚩 1. node.js 설치하기
 
 * node.js [설치](https://nodejs.org/ko/) :  10.16.0 버전을 설치해주세요!
 
@@ -11,11 +11,13 @@ $ node -v
 $ npm -v
 ```
 
+![node-v](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/cli-4.png)
+
 <br/>
 
 ------
 
-### 2. 프로젝트 구성하기
+### 🚩 2. 프로젝트 구성하기
 
 * Desktop > **aws-reko-server** 폴더를 생성해주세요.
 
@@ -25,51 +27,63 @@ $ npm -v
 $ npm init
 ```
 
-*사진 넣기
+![npm_init](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/cli-4.png)
 
 <br/>
 
-#### 1단계 : node express 추가하기
+#### ❗️1단계 : node express 설치하기
 
 ```
 $ npm install express --save
 $ express 
+$ npm install
 ```
 
-* 아래와 같은 것이 뜬다면 **y**를 쳐주세요!
-
->   warning: the default view engine will not be jade in future releases
->   warning: use `--view=jade' or `--help' for additional options
->
-> destination is not empty, continue? [y/N] **y**
-
-
-
-**여기서 express 화면 보여주기!!!!!!**ㅅㅏ진추가!!!!!
+![npm_express](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/cli-4.png)
 
 <br/>
 
-#### 2단계 : 추가 node module 추가하기
+#### ❗️2단계 : 추가 node module 설치하기
+
+* Recognition API에 필요한 추가 모듈을 설치하도록 하겠습니다.
 
 ```
-$ npm install fs-extra klaw-sync multer --save
+$ npm install fs-extra klaw-sync multer aws-sdk --save
 ```
 
 <br/>
 
-#### 3단계 : 프로젝트 열기
+```
+$ npm start
+```
+
+- http://localhost:3000/ 으로 접속하시면 이렇게 express 페이지가 뜨는 것을 보실 수 있습니다!
+
+![express](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/cli-4.png)
+
+* 터미널에서는 이렇게 로그가 뜨는 것을 볼 수 있어요!
+
+![npm_start](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/cli-4.png)
+
+
+
+#### ❗️3단계 : 프로젝트 열기
 
 * 앞서 다운받은 코드편집기를 통해 프로젝트(aws-reko-server)를 열어주세요!
 
-사진
+![vpscode](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/cli-4.png)
 
 <br/>
 
-#### 4단계 : .js 파일 추가하기
+#### ❗️4단계 : .js 파일 추가하기
 
-‼️ **Routes 폴더 하위**에 아래의 파일들을 추가해주세요.
+- **routes 폴더 하위**에 아래의 파일들을 추가해주세요.
 
-* **import.js** - 코드 주석 달기
+![routes](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/cli-4.png)
+
+<br/>
+
+* **import.js** 
 
 ```javascript
 /*
@@ -148,7 +162,7 @@ indexFaces();
 
 <br/>
 
-* **index.js** - 코드 주석 달기
+* **index.js** 
 
 ```javascript
 var express = require('express');
@@ -214,7 +228,7 @@ module.exports = router;
 
 <br/>
 
-* **config.js** - 코드 주석 달기
+* **config.js** 
 
 ```javascript
 module.exports.collectionName = "aws-reko-server";
@@ -223,11 +237,14 @@ module.exports.region = "ap-northeast-2";
 
 <br/>
 
-------
+----------
 
-### [다음 목차]
+<br/>
+
+## 🚩 다음 목차
 
 - [EC2에 서버 배포하기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/EC2%EC%97%90%20%EC%84%9C%EB%B2%84%20%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0.md)
+
 - [iOS 네트워크 통신하기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/iOS%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%82%B9%20%ED%86%B5%EC%8B%A0%ED%95%98%EA%B8%B0.md)
 - [삭제 가이드]()
 

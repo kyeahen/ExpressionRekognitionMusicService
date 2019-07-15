@@ -37,6 +37,7 @@ $ ssh -i [키페어 파일 경로] ubuntu@[Ec2 인스턴스 퍼블릭 DNS]
 ### ❗️1단계 : 번들 설치 관리자를 사용하여 AWS CLI 설치
 
 * **EC2에 접속된 터미널**에서 차례대로 명령어를 입력해주세요.
+<br/>
 
 **1.  AWS CLI 번들 설치 관리자 다운로드하기**
 
@@ -82,7 +83,7 @@ Default output format [None]: json
 >
 > - `Default output format`은 결과의 형식을 지정하는 방법을 지정합니다.
 
-
+<br/>
 
 - 아래 명령을 실행하면, [default] 항목에 설정한 Key들이 저장되어 있는 것을 확인하실 수 있습니다.
 

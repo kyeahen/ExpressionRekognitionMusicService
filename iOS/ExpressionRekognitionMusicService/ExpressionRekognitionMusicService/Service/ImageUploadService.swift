@@ -14,7 +14,7 @@ struct ImageUploadService: APIService {
     
     //MARK: 표정 인식 API
     static func postImage(image: UIImage, completion: @escaping (_ result: String) -> Void) {
-        let URL = url(api/rekognition)
+        let URL = url("api/rekognition")
 
         let imageData = image.jpegData(compressionQuality: 0.3)
         

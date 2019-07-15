@@ -1,4 +1,20 @@
 # AWS EC2 생성하기
+### EC2 (Elastic Compute Cloud)
+
+> AWS 상에서 안정적이며, 크기를 조정 가능한 컴퓨팅 파워를 제공하는 웹서비스를 말합니다.
+>
+> 이러한 가상화 서버(Virtual Server)를 '인스턴스(Instance)'라 부르며,
+>
+> 필요에 따라 한 개의 인스턴스에서 수천개의 인스턴스로 손쉽게 컴퓨팅 파워를 확장할 수 있습니다.
+
+
+
+-----
+
+
+
+
+
 * EC2에 들어가 **인스턴스 시작**을 클릭해주세요.
 
 ![ec2](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/ec2.png)

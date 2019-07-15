@@ -1,17 +1,36 @@
 # IAM 생성하기
 
-Amazon Rekognition 같은 AWS 서비스를 사용하려면 액세스할 때 자격 증명을 제공해야 합니다. <br/>
-이를 통해 서비스가 소유한 리소스에 액세스할 수 있는 권한이 있는지를 확인합니다.
+### IAM(Identitiy & Access Management)
 
+> AWS 리소스에 대한 액세스를 안전하게 관리할 수 있게 해주는 서비스로
+>
+> AWS 사용자 및 그룹을 만들고 관리하며, 권한을 사용해 AWS 리소스에 대한 액세스를 허용 및 거부할 수 있습니다.
 
+저희는 이번 실습에서 표정 인식 기술을 사용하기 위해 AWS Rekognition을 사용하게 됩니다.
 
-* **IAM** 검색
+이러한 AWS 서비스를 사용하려면 액세스 할 때, 자격 증명을 제공해야 합니다.
+
+이를 통해, 사용자가 서비스가 소유한 리소스에 액세스 할 수 있는 권한이 있는지를 확인합니다.
+
+<br/>
+
+------
+
+<br/>
+
+본격적으로 IAM을 만들어보도록 하겠습니다.
+
+아래 과정을 잘 따라와주세요!🤗
+
+<br/>
+
+* **IAM**을 검색해주세요.
 
 ![iam_search](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/iam_search.png)
 
 
 
-* **IAM** 생성
+* **IAM** 생성하도록 하겠습니다.
 
   목차에서 **사용자** 선택 후, **사용자 추가** 버튼을 선택해주세요.
 
@@ -21,8 +40,8 @@ Amazon Rekognition 같은 AWS 서비스를 사용하려면 액세스할 때 자�
 
 ### 1단계 : 사용자 세부 정보 설정
 
-- <u>사용자 이름</u>은 아래와 같이 **AWS-Reko-iOS**로 설정해주세요.
-- <u>AWS 액세스 유형</u>은 **AWS-Reko-iOS**를 선택해주세요.
+- 사용자 이름은 아래와 같이 **AWS-Reko-iOS**로 설정해주세요.
+- AWS 액세스 유형은 **프로그래밍 방식 액세스**를 선택해주세요.
 
 ![iam1](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/iam1.png)
 
@@ -30,7 +49,7 @@ Amazon Rekognition 같은 AWS 서비스를 사용하려면 액세스할 때 자�
 
 ### 2단계 : 권한 추가
 
-- **기존 정책 직접 연결**을 선택한 후, **다음**을 클릭해주세요.
+- **기존 정책 직접 연결**을 선택해주세요.
 
 ![iam2](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/iam2.png)
 
@@ -68,19 +87,15 @@ Amazon Rekognition 같은 AWS 서비스를 사용하려면 액세스할 때 자�
 
 ### 5단계 : 완료
 
-* **.csv 파일**을 꼭! 다운로드해주세요.
+* **.csv 파일**을 꼭! 다운로드해주세요. 지금이 다운받을 수 있는 마지막 기회입니다.
+
+* IAM 사용자 이름과 동일한 파일명인 **AWS-Reko-iOS.csv**로 저장하는 것을 추천드립니다.
+
+  자신이 기억할 수 있는 폴더에 저장해주세요!
+
+  다음 목차에서 해당 파일을 사용할 예정입니다.
 
 ![iam5](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/iam5.png)
-
-<br/>
-
-* Desktop > **IAM_Key** 폴더 생성 후, **AWS-Reko-iOS.csv**로 저장하는 것을 추천드립니다.
-
-  해당 경로가 아니여도 자신이 기억하기 편한 폴더 및 이름으로 저장해주세요.
-
-  ![스크린샷 2019-07-13 오후 4.39.40](/Users/kyeahen/Desktop/aws 세미나 가이드 자료/스크린샷 2019-07-13 오후 4.39.40.png)
-
-
 
 <br/>
 

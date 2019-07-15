@@ -1,18 +1,18 @@
 # iOS 네트워킹 통신하기
 
-‼️ [iOS 프로젝트 다운받기](https://github.com/kyeahen/ExpressionRekognitionMusicService/archive/master.zip)
+✅ 앞서 다운받은 프로젝트 파일에서 **iOS 폴더**로 이동하면 제가 만들어놓은 iOS 프로젝트가 있습니다.
 
-* 제가 미리 프로젝트를 구성해서 github에 올려놓았습니다.
+![ios_path](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/iOS-2.png)
 
-  이 프로젝트로 세미나를 이어서 진행해볼게요!
+​	  다운받지 않으신 분들은 지금 다운받아주세요!
 
-  **iOS 폴더** 안에 프로젝트가 있습니다.
+​	 ‼️ [iOS 프로젝트 다운받기](https://github.com/kyeahen/ExpressionRekognitionMusicService/archive/master.zip)
 
-  <br/>
+✅ 시간 관계 상 **네트워킹 위주**로 진행하도록 하겠습니다.
 
-* 시간 관계 상 **네트워킹 위주**로 진행하도록 하겠습니다.
+​	  View 부분이 궁금하신 분들은 세미나가 끝난 후, 따로 질문해주시면 감사하겠습니다.
 
-  View 부분이 궁금하신 분들은 세미나가 끝난 후, 따로 질문해주시면 감사하겠습니다.
+<br/>
 
 ---------
 
@@ -26,11 +26,11 @@
 
   라이브러리를 설치하는 과정입니다.
 
-터미널 사진!
-
 ```
 $ pod install
 ```
+
+<br/>
 
 * 파인더로 이동하면 아래와 같이 파일들이 추가되어 있습니다.
 
@@ -43,8 +43,6 @@ $ pod install
 
 
 ### ❗️2단계 : 통신 파일 작성하기
-
-
 
 * **APIService.swift**
 
@@ -129,6 +127,10 @@ struct Music: Codable {
  <br/>
 
 * **MusicService.swift**
+
+  음악 추천 API는 제가 따로 구현해놓았습니다!
+
+  제 임의대로 음악 추천을 해놓았으니 양해부탁드립니다☺️
 
 ```swift
 import Alamofire

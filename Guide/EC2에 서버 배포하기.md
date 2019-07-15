@@ -23,13 +23,8 @@ $ scp -i [pem 파일 경로] [압축한 파일 이름] ubuntu@[ec2 인스턴스�
 ![public_dns](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/public_dns.png)
 
 <br/>
-* **터미널 예시**
 
-  **pem 파일 경로**와 **다운받은 프로젝트 서버 압축 파일 경로**를 잘 확인하세요!
-
-  pem 파일 경로에 " "를 붙이지 않으셔도 됩니다!
-
-  저는 가시성 있게 하기 위해서 붙인 겁니다!
+* **pem 파일 경로**와 **다운받은 프로젝트 서버 압축 파일 경로**를 잘 확인하세요!
 
 ![scp](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/scp.png)
 

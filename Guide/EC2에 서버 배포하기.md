@@ -8,7 +8,7 @@
 
 - 서버 압축 파일은 **Server** 폴더 안에 있습니다!
 
-![server](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/public_dns.png)
+![server](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/server.png)
 
 <br>
 

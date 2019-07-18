@@ -12,6 +12,8 @@ protocol APIService {
 
 extension APIService {
     static func url(_ path: String) -> String {
-        return "http:// EC2퍼블릭 DNS or IPv4 퍼블릭 IP을 넣어주세요 :3000/" + path
+//        return "http:// EC2퍼블릭 DNS or IPv4 퍼블릭 IP을 넣어주세요 :3000/" + path
+//        return "http://13.125.249.142:3000/" + path
+        return "http://localhost:3000/" + path
     }
 }

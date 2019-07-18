@@ -26,7 +26,6 @@ struct MusicService {
                     do {
                         let musicData = try decoder.decode([Music].self, from: value)
                         completion(musicData)
-                        print(musicData)
                         
                     } catch {
                         print("변수 문제")

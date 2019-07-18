@@ -10,10 +10,13 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
+//해당 구조체에 프로토콜을 구현하였습니다.
 struct ImageUploadService: APIService {
     
     //MARK: 표정 인식 API
     static func postImage(image: UIImage, completion: @escaping (_ result: String) -> Void) {
+        
+        //앞서 APIService에 정의했던 메소드를 사용하여 경로만 추가합니다.
         let URL = url("api/rekognition")
 
         let imageData = image.jpegData(compressionQuality: 0.3)

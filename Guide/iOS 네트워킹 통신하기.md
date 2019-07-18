@@ -2,7 +2,7 @@
 
 ✅ 앞서 다운받은 프로젝트 파일에서 **iOS 폴더**로 이동하면 제가 만들어놓은 iOS 프로젝트가 있습니다.
 
-![ios_path](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/iOS-2.png)
+![ios_path](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/Ios_path.png)
 
 ​	  다운받지 않으신 분들은 지금 다운받아주세요!
 
@@ -16,7 +16,7 @@
 
 ---------
 
-
+<br/>
 
 ### ❗️1단계 : 프로젝트 세팅하기
 

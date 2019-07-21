@@ -16,6 +16,10 @@ class MainViewController: UIViewController {
     var imagePickerFlag : Bool = false
 
     //MARK: View Life Cycle
+    /* ViewController가 메모리에 로드되고 난 후, 호출됩니다.
+     해당 메소드는 뷰의 로딩이 완료되었을 때, 시스템에 의해 자동으로 호출되기 때문에
+     일반적으로 리소스를 초기화하거나 초기 화면을 구성하는 용도로 주로 사용합니다.
+     화면이 처음 만들어질 때, 한번만 실행됩니다. */
     override func viewDidLoad() {
         super.viewDidLoad()
         

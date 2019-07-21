@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		225EBC6622E2DB8500C2C3D4 /* YoutubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225EBC6522E2DB8500C2C3D4 /* YoutubeViewController.swift */; };
 		22BC97D122D9DA65000943FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC97D022D9DA65000943FD /* AppDelegate.swift */; };
 		22BC97D622D9DA65000943FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BC97D422D9DA65000943FD /* Main.storyboard */; };
 		22BC97D822D9DA66000943FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22BC97D722D9DA66000943FD /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		0045C8DFFD4051531A2BCDCC /* Pods-ExpressionRekognitionMusicService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpressionRekognitionMusicService.debug.xcconfig"; path = "Target Support Files/Pods-ExpressionRekognitionMusicService/Pods-ExpressionRekognitionMusicService.debug.xcconfig"; sourceTree = "<group>"; };
 		0AB6BAF8BBE32040A19DF836 /* Pods_ExpressionRekognitionMusicService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpressionRekognitionMusicService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		225EBC6522E2DB8500C2C3D4 /* YoutubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeViewController.swift; sourceTree = "<group>"; };
 		22BC97CD22D9DA65000943FD /* ExpressionRekognitionMusicService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpressionRekognitionMusicService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22BC97D022D9DA65000943FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22BC97D522D9DA65000943FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				22BC97E622D9E0BA000943FD /* MainViewController.swift */,
 				22BC97E422D9E0B1000943FD /* MusicViewController.swift */,
 				22BC97E222D9E0A2000943FD /* MusicCollectionViewCell.swift */,
+				225EBC6522E2DB8500C2C3D4 /* YoutubeViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/YoutubePlayer-in-WKWebView/YoutubePlayer_in_WKWebView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -227,6 +231,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YoutubePlayer_in_WKWebView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -270,6 +275,7 @@
 				22BC97EB22DA4570000943FD /* ImageUploadService.swift in Sources */,
 				22BC97F322DB47D8000943FD /* APIService.swift in Sources */,
 				22BC97E722D9E0BA000943FD /* MainViewController.swift in Sources */,
+				225EBC6622E2DB8500C2C3D4 /* YoutubeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

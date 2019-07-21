@@ -8,6 +8,7 @@ target 'ExpressionRekognitionMusicService' do
     pod 'Alamofire'
     pod 'SwiftyJSON'
     pod 'Kingfisher'
+    pod 'YoutubePlayer-in-WKWebView'
 
   # Pods for ExpressionRekognitionMusicService
 

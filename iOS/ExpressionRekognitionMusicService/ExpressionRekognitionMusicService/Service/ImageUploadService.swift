@@ -21,6 +21,7 @@ struct ImageUploadService: APIService {
 
         let imageData = image.jpegData(compressionQuality: 0.3)
         
+        //MultipartFormData 통신
         Alamofire.upload(multipartFormData: { (multipartFormData) in
             
             multipartFormData.append(imageData!, withName: "image", fileName: "photo.jpg", mimeType: "image/jpeg")
@@ -32,12 +33,14 @@ struct ImageUploadService: APIService {
                 
                 upload.responseData(completionHandler: {(res) in
                     switch res.result {
+                        
+                    //서버 연결 성공
                     case .success :
-                        print("통신 성공")
                         if let value = res.result.value {
                             
+                            //JSON 값 중 emotion에 해당하는 Value 값을 가져오는 것입니다.
                             let emotion = JSON(value)["emotion"].string
-                            print(emotion)
+                            
                             completion(emotion ?? "")
                         }
                         
@@ -48,6 +51,7 @@ struct ImageUploadService: APIService {
                 
                 break
                 
+            //서버 연결 실패
             case .failure(let err):
                 print(err.localizedDescription)
             }

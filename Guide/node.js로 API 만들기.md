@@ -11,7 +11,7 @@ $ node -v
 $ npm -v
 ```
 
-![node-v](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/cli-4.png)
+![node-v](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/node-v.png)
 
 <br/>
 
@@ -27,7 +27,7 @@ $ npm -v
 $ npm init
 ```
 
-![npm_init](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/cli-4.png)
+![npm_init](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/npm_init.png)
 
 <br/>
 
@@ -39,7 +39,7 @@ $ express
 $ npm install
 ```
 
-![npm_express](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/cli-4.png)
+![npm_express](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/npm_express.png)
 
 <br/>
 
@@ -59,11 +59,11 @@ $ npm start
 
 - http://localhost:3000/ 으로 접속하시면 이렇게 express 페이지가 뜨는 것을 보실 수 있습니다!
 
-![express](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/cli-4.png)
+![express](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/express.png)
 
 * 터미널에서는 이렇게 로그가 뜨는 것을 볼 수 있어요!
 
-![npm_start](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/cli-4.png)
+![npm_start](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/npm_start.png)
 
 
 
@@ -71,7 +71,7 @@ $ npm start
 
 * 앞서 다운받은 코드편집기를 통해 프로젝트(aws-reko-server)를 열어주세요!
 
-![vpscode](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/cli-4.png)
+![vscode](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/vscode.png)
 
 <br/>
 
@@ -79,7 +79,7 @@ $ npm start
 
 - **routes 폴더 하위**에 아래의 파일들을 추가해주세요.
 
-![routes](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/cli-4.png)
+![routes](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/routes.png)
 
 <br/>
 
@@ -178,7 +178,7 @@ var upload = multer({ dest: './uploads' });
 AWS.config.region = config.region;
 var rekognition = new AWS.Rekognition({region: config.region});
 
-//Post
+//Post - Rekognition을 이용한 얼굴 분석 API 
 router.post('/api/rekognition', upload.single("image"), function (req, res, next) {
 	var bitmap = fs.readFileSync(req.file.path);
 
@@ -193,21 +193,34 @@ router.post('/api/rekognition', upload.single("image"), function (req, res, next
 	 	if (err) {
 	 		res.send(err);
 	 	} else {
+
+			/* 올바른 사진 분석을 하지 못했을 시 (인물 사진이 아닐 경우)에는 FaceDetail 값이 빈 배열로 오게 됩니다. 
+			그럴 시에 클라이언트에게 올바를 에러 처리를 할 수 있도록 아래와 같은 결과를 반환하도록 하였습니다.
+			*/
 			if(data.FaceDetails && data.FaceDetails.length > 0)
 			{	
 				var bestEmotion = {
 					emotion : getBestEmotion(data)
 				};
 
+				//Rekognition이 반환해준 표정 인식 값 중 최대 값을 반환합니다.
 				res.json(bestEmotion);
 
 			} else {
-				res.send("Not rekognition");
+				var errorEmotion = {
+					emotion : "none"
+				};
+
+				//표정 인식 값이 없을 시에는 임의로 none 값을 반환했습니다.
+				res.json(errorEmotion)
 			}
 		}
 	});
 });
 
+/* 저희는 얼굴 분석 API에서 표정 인식 기능만을 사용할 것이기 때문에 FaceDetails에 있는 모든 값들이 필요하지 않습니다.
+그래서 emtion 값만 추출할 수 있도록 하였습니다. 
+그 중에서도 저희는 가장 높은 감정 값이 필요하기 때문에 가장 높은 감정 값을 반환할 수 있도록 하였습니다. */
 var getBestEmotion = function(data) {
 	var emotionList = data.FaceDetails[0].Emotions;
 	var MAX = 0;
@@ -232,7 +245,7 @@ module.exports = router;
 
 ```javascript
 module.exports.collectionName = "aws-reko-server";
-module.exports.region = "ap-northeast-2";
+module.exports.region = "ap-northeast-2"; //리전 위치
 ```
 
 <br/>

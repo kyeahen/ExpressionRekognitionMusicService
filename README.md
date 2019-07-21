@@ -55,9 +55,12 @@
 
 - [Kingfisher](https://github.com/onevcat/Kingfisher) : 이미지 다운로드 및 캐싱 라이브러리
 
+- [YoutubePlayer-in-WKWebView](https://github.com/hmhv/YoutubePlayer-in-WKWebView) : 유튜브 동영상을 앱 내에서 보여줄 수 있도록 도와주는 라이브러리
+
 #### Back-End : Node.js
 
 - [Express](https://github.com/expressjs/express) : Web 어플리케이션 프레임워크
+
   - Web 응용 프로그램을 위한 기본적인 시스템이 구축되어 있습니다.
 
 ------

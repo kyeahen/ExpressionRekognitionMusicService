@@ -34,6 +34,16 @@
 
 ------
 
+### 🚩 앱 소개
+
+![app1](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/app1.png)
+
+![app2](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/app2.png)
+
+![app3](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/app3.png)
+
+<br/>
+
 ### 🚩 사용 기술 소개
 
 #### AWS
@@ -62,6 +72,8 @@
 - [Express](https://github.com/expressjs/express) : Web 어플리케이션 프레임워크
 
   - Web 응용 프로그램을 위한 기본적인 시스템이 구축되어 있습니다.
+
+<br/>
 
 ------
 

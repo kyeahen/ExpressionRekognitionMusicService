@@ -234,11 +234,12 @@ struct MusicService {
 
   <br/>
 
-[애뮬레이터로 시연하기]
+#### [애뮬레이터로 시연하기]
 
 - 사파리에 들어가서 자신이 원하는 인물 사진을 검색해주세요.
 
   ![saveimage1](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/saveimage1.png)
+  <br/>
 
 - 사진을 길게 눌러서 저장해주세요.
 
@@ -248,9 +249,10 @@ struct MusicService {
 
 ### ❗️4단계 :  앱 완성
 
-```
-<iframe width="640" height="360" src="https://youtu.be/e44lKDPGtyE" frameborder="0" gesture="media" allowfullscreen=""></iframe>
-```
+<iframe width="560" height="315"
+src="https://youtu.be/e44lKDPGtyE"
+frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 
 ----------
 

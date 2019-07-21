@@ -249,9 +249,7 @@ struct MusicService {
 
 ### ❗️4단계 :  앱 완성
 
-<iframe width="560" height="315"
-src="https://youtu.be/e44lKDPGtyE"
-frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+[![Video](http://img.youtube.com/vi/e44lKDPGtyE/0.jpg)](https://youtu.be/e44lKDPGtyE) 
 
 
 ----------

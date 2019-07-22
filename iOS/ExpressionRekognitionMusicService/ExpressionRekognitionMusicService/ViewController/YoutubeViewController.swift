@@ -12,7 +12,7 @@ import YoutubePlayer_in_WKWebView
 class YoutubeViewController: UIViewController {
 
     @IBOutlet weak var playerView: WKYTPlayerView!
-
+        
     var url: String = ""
     
     override func viewDidLoad() {

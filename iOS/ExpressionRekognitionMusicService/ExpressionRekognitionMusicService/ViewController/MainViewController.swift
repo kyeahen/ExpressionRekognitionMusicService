@@ -16,6 +16,7 @@ class MainViewController: UIViewController {
     var imagePickerFlag : Bool = false
 
     //MARK: View Life Cycle
+    
     /* ViewController가 메모리에 로드되고 난 후, 호출됩니다.
      해당 메소드는 뷰의 로딩이 완료되었을 때, 시스템에 의해 자동으로 호출되기 때문에
      일반적으로 리소스를 초기화하거나 초기 화면을 구성하는 용도로 주로 사용합니다.
@@ -89,6 +90,10 @@ extension MainViewController {
     
     //MARK: 이미지 업로드 - POST
     //Rekognition 서버에 이미지를 업로드하여 가장 높은 표정 값을 반환받습니다.
+    
+    /* completion에 보낸 result 값을 result라는 변수로 받아 사용합니다.
+     변수명은 이름은 원하시는대로 지으셔도 상관없습니다.
+     */
     func postImage() {
         ImageUploadService.postImage(image: imageView.image!) {
             (result) in

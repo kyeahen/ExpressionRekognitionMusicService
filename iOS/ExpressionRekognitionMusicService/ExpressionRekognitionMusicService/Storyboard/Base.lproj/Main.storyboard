@@ -35,7 +35,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="Ovg-1V-rBI"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                 <state key="normal" title="음악 추천 받기">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -95,7 +95,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="175" height="240"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ausg" translatesAutoresizingMaskIntoConstraints="NO" id="qr7-K9-C2t">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qr7-K9-C2t">
                                                     <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
                                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
@@ -162,7 +162,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zej-vK-eBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1866" y="-564"/>
+            <point key="canvasLocation" x="1817" y="-564"/>
         </scene>
         <!--Youtube View Controller-->
         <scene sceneID="HKc-tf-h0i">
@@ -184,17 +184,17 @@
                         <constraints>
                             <constraint firstItem="wuB-Bp-H1H" firstAttribute="trailing" secondItem="5Ng-Fw-SSj" secondAttribute="trailing" id="Iu9-kr-Kec"/>
                             <constraint firstItem="5Ng-Fw-SSj" firstAttribute="leading" secondItem="wuB-Bp-H1H" secondAttribute="leading" id="XzV-75-MUP"/>
-                            <constraint firstItem="5Ng-Fw-SSj" firstAttribute="top" secondItem="wuB-Bp-H1H" secondAttribute="top" id="rHS-CR-2Qh"/>
+                            <constraint firstItem="5Ng-Fw-SSj" firstAttribute="top" secondItem="wuB-Bp-H1H" secondAttribute="top" id="e2O-er-NQ7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wuB-Bp-H1H"/>
                     </view>
                     <connections>
-                        <outlet property="playerView" destination="5Ng-Fw-SSj" id="xtZ-iu-hV1"/>
+                        <outlet property="playerView" destination="5Ng-Fw-SSj" id="M0n-S9-6KU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xbe-rf-4eL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2654" y="-564"/>
+            <point key="canvasLocation" x="2633" y="-564"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ryp-zC-uqF">
@@ -223,7 +223,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ausg" width="225" height="225"/>
         <image name="camera" width="512" height="512"/>
     </resources>
 </document>

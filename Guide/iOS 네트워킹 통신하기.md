@@ -270,18 +270,27 @@ struct MusicService {
 
   <br/>
 
-### ❗️4단계 :  앱 완성
+### ❗️4단계 : 앱 완성
 - 아래 사진을 클릭하시면 시연 영상을 보실 수 있습니다!
 
   [![Video](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/app1.png)](https://youtu.be/e44lKDPGtyE) 
 
 ----------
+<br/>
+
+💝👨🏻‍💻👨🏻‍💻💝<br/>
+하나의 앱이 완성되었습니다! <br/>
+여기까지 따라오시느라 너무 고생많으셨습니다. <br/>
+오늘 세미나가 여러분들께 많은 도움이 되었기를 바랍니다! <br/>
+하.지.만! <br/>
+아직 끝이 아닙니다. <br/>
+혹시나 하는 과금을 예방하기 위해 아래의 **삭제가이드**를 따라해주시는 것 잊지마세요! <br/>
 
 <br/>
 
 ## 🚩 다음 목차
 
-- [삭제 가이드]()
+- [삭제 가이드](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/%EC%82%AD%EC%A0%9C%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
 
 
 

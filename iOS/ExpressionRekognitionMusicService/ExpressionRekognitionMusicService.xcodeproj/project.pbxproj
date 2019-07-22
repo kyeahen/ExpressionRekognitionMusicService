@@ -54,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		225EBC6A22E59C8200C2C3D4 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				22BC97EE22DA5262000943FD /* Model */,
+				22BC97E922DA454D000943FD /* Service */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		22BC97C422D9DA65000943FD = {
 			isa = PBXGroup;
 			children = (
@@ -76,8 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				22BC97D022D9DA65000943FD /* AppDelegate.swift */,
-				22BC97EE22DA5262000943FD /* Model */,
-				22BC97E922DA454D000943FD /* Service */,
+				225EBC6A22E59C8200C2C3D4 /* Util */,
 				22BC97E822D9E0C1000943FD /* ViewController */,
 				22BC97F122DB0729000943FD /* Storyboard */,
 				22BC97D722D9DA66000943FD /* Assets.xcassets */,

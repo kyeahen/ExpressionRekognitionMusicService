@@ -53,9 +53,9 @@ struct ImageUploadService: APIService {
                          */
                         if let value = res.result.value {
                             
-                            //JSON 값 중 emotion에 해당하는 Value 값을 가져오는 것입니다.
+                            /* SwfityJson 라이브러리를 사용하여
+                             JSON 값 중 emotion에 해당하는 Value 값을 가져오는 것입니다. */
                             let emotion = JSON(value)["emotion"].string
-                            
                             completion(emotion ?? "")
                         }
                         
@@ -72,8 +72,6 @@ struct ImageUploadService: APIService {
             }
         }
     }
-    
-    
 }
 
 

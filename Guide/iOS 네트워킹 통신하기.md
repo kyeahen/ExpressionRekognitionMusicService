@@ -4,13 +4,15 @@
 
 ![ios_path](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/Ios_path.png)
 
-​	  다운받지 않으신 분들은 지금 다운받아주세요!
+​	  아직 다운받지 않으신 분들은 지금 다운받아주세요!
 
 ​	 ‼️ [iOS 프로젝트 다운받기](https://github.com/kyeahen/ExpressionRekognitionMusicService/archive/master.zip)
 
-✅ 시간 관계 상 **네트워킹 위주**로 진행하도록 하겠습니다.
+<br/>
 
-​	  View 부분이 궁금하신 분들은 세미나가 끝난 후, 따로 질문해주시면 감사하겠습니다.
+✅ 시간 관계 상 Rekognition을 사용하는 **네트워킹 통신 위주**로 진행하도록 하겠습니다.
+
+​	  View 부분이 궁금하신 분들은 세미나가 끝난 후, 따로 질문해주시면 감사하겠습니다!
 
 <br/>
 

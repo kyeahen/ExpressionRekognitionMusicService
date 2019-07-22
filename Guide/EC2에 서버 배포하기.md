@@ -16,7 +16,7 @@
 
   시간 관계 상 서버 개발에 관련된 부분은 깊게 다루지 않도록 하겠습니다!
 
-  궁금하신 분들은 아래 문서를 참고해주세요!
+  궁금하신 분들은 아래 문서를 참고해주세요! 
 
   ✅ [node.js로 API 만들기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/node.js%EB%A1%9C%20API%20%EB%A7%8C%EB%93%A4%EA%B8%B0.md)
 

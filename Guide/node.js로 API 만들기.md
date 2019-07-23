@@ -206,8 +206,7 @@ module.exports.region = "ap-northeast-2"; //CLI에서 설정했던 리전 위치
 --------
 
 
-
-###❗️5단계 : 서버 실행하기
+### ❗️5단계 : 서버 실행하기
 
 ```javascript
 $ npm start

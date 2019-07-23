@@ -1,19 +1,6 @@
 # EC2에 서버 배포하기
 
-‼️ [프로젝트 다운받기](https://github.com/kyeahen/ExpressionRekognitionMusicService/archive/master.zip)
 
-- 해당 프로젝트에 오늘 구현하게 될 서버 프로젝트와 iOS 프로젝트가 있습니다.
-
-  다운받아주세요!
-
-- 서버 압축 파일은 **Server** 폴더 안에 있습니다!
-
-![server](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/server.png)
-
-
------
-
-<br/>
 
 ## ❗️1단계 : EC2에 프로젝트 압축 파일 업로드하기
 <br/>

@@ -1,0 +1,1 @@
+module.exports.region = "ap-northeast-2"; //CLI에서 설정했던 리전 위치

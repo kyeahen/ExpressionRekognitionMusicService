@@ -203,7 +203,33 @@ module.exports.region = "ap-northeast-2"; //CLI에서 설정했던 리전 위치
 
 <br/>
 
+--------
 
+
+
+###❗️5단계 : 서버 실행하기
+
+```javascript
+$ npm start
+```
+
+- **http://localhost:3000/api/rekognition** 으로 접속해보세요!
+
+  배포가 잘되었다면 터미널에서 로그를 확인할 수 있습니다.
+
+  ❗️아래와 같이 **404 에러**가 발생하는 것이 정상입니다! <br/>
+    API 형식에 맞지 않게 이미지 파일을 업로드 하지 않아 발생한 정상적인 에러입니다.<br/>
+    단순히 서버가 잘 배포되었는지 확인하기 위한 과정입니다! <br/>
+
+![404](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/404.png)
+
+<br/>
+
+### ❗️6단계 : 서버 파일 압축하기
+
+- **node_modules 파일**을 제거한 후, 압축해주세요!!
+
+<br/>
 
 ## 🚩 다음 목차
 

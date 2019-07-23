@@ -20,7 +20,7 @@
 
 <br/>
 
-### ❗️1단계 : 프로젝트 세팅하기
+## ❗️1단계 : 프로젝트 세팅하기
 
 * 터미널 상에서 **iOS > ExpressionRekognitionMusicService**로 이동해주세요.
 
@@ -44,7 +44,13 @@ $ pod install
 <br/>
 
 
-### ❗️2단계 : 통신 파일 작성하기
+
+### ✅ API 명세서 [이동](https://github.com/kyeahen/ExpressionRekognitionMusicService/wiki)
+ - 오늘 통신하게 될 API들에 대한 설명을 적어놓았습니다. 참고하세요!
+
+<br/>
+
+## ❗️2단계 : 통신 파일 작성하기
 
 * **APIService.swift**
   - API 주소를 편리하게 사용하기 위한 파일입니다.
@@ -77,6 +83,7 @@ extension APIService {
 <br/>
 
 * **ImageUploadService.swift** 
+  - 표정 인식 API 명세서 [이동](https://github.com/kyeahen/ExpressionRekognitionMusicService/wiki/%EC%9D%8C%EC%95%85-%EC%B6%94%EC%B2%9C-API)
   - 사진을 업로드하면 표정을 분석하여 가장 높은 표정 값을 반환받는 네트워크 통신입니다.
 
 ```swift
@@ -176,10 +183,11 @@ struct Music: Codable {
  <br/>
 
 * **MusicService.swift** 
+  - 음악 추천 API  [이동](https://github.com/kyeahen/ExpressionRekognitionMusicService/wiki/%EC%9D%8C%EC%95%85-%EC%B6%94%EC%B2%9C-API)
 
   - 표정에 알맞는 음악 추천 리스트를 가져오는 네트워크 통신입니다.
 
-  - 음악 추천 API는 제가 따로 구현해놓았습니다!
+  - **음악 추천 API는 제가 따로 구현해놓았습니다!**
   
     제 임의대로 음악 추천을 해놓았으니 양해부탁드립니다☺️
 
@@ -199,7 +207,7 @@ struct MusicService {
      */
     static func getMusicRecommandList(emotion: String, completion: @escaping ([Music]) -> Void) {
         
-        let URL = "http://ec2-13-125-219-247.ap-northeast-2.compute.amazonaws.com:3000/api/music?emotion=\(emotion)"
+        let URL = "http://13.125.219.247:3000/api/music?emotion=\(emotion)"
         
         Alamofire.request(URL, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseData() { res in
             switch res.result {
@@ -246,8 +254,9 @@ struct MusicService {
 ```
 
   <br/>
+  
 
-### ❗️3단계 : 앱 실행하기
+## ❗️3단계 : 앱 실행하기
 
 * 자신의 **디바이스**를 연결하거나 **시뮬레이터**를 선택해주세요.
 
@@ -271,8 +280,9 @@ struct MusicService {
   ![saveimage2](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/saveimage2.png)
 
   <br/>
+  
 
-### ❗️4단계 : 앱 완성
+## ❗️4단계 : 앱 완성
 - 아래 사진을 클릭하시면 시연 영상을 보실 수 있습니다!
 
   [![Video](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/app1.png)](https://youtu.be/e44lKDPGtyE) 

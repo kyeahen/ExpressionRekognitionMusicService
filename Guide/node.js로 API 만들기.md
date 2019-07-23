@@ -208,7 +208,7 @@ module.exports.region = "ap-northeast-2"; //CLI에서 설정했던 리전 위치
 
 ### ❗️5단계 : 서버 실행하기
 
-```javascript
+```
 $ npm start
 ```
 
@@ -226,7 +226,11 @@ $ npm start
 
 ### ❗️6단계 : 서버 파일 압축하기
 
-- **node_modules 파일**을 제거한 후, 압축해주세요!!
+
+```
+$ cd 서버 프로젝트 파일 경로
+$ zip -r ../프로젝트 파일명 ./ -x \*node_modules\*
+```
 
 <br/>
 

@@ -36,11 +36,7 @@
 
 ### 🚩 앱 소개
 
-![app1](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/app1.png)
-
-![app2](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/app2.png)
-
-![app3](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/app3.png)
+![demo](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/demo.gif)
 
 <br/>
 

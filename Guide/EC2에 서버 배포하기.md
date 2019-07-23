@@ -10,17 +10,6 @@
 
 ![server](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/server.png)
 
-<br>
-
-- 오늘 세미나는 **AWS Rekognition**과 **iOS 앱 개발**에 중점을 둔 세미나이기 때문에
-
-  시간 관계 상 서버 개발에 관련된 부분은 깊게 다루지 않도록 하겠습니다!
-
-  궁금하신 분들은 아래 문서를 참고해주세요! 
-
-  ✅ [node.js로 API 만들기](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/node.js%EB%A1%9C%20API%20%EB%A7%8C%EB%93%A4%EA%B8%B0.md)
-
-<br>
 
 -----
 
@@ -97,6 +86,7 @@ $ npm start
 ```
 
 ![ec2_npm_start](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/npm_start.png)
+<br>
 
 * **http:// [ec2 퍼블릭 DNS or IPv4 퍼블릭 IP] :3000/api/rekognition** 으로 접속해보세요!
 

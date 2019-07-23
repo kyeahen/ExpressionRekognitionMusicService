@@ -1,8 +1,8 @@
 # node.js로 API 만들기
 
-### 🚩 1. node.js 설치하기
+## 🚩 1. node.js 설치하기
 
-* node.js [설치](https://nodejs.org/ko/) :  10.16.0 버전을 설치해주세요!
+* node.js [설치](https://nodejs.org/ko/) :  **10.16.0 버전**을 설치해주세요!
 
   설치 후, 아래의 명령어를 입력했을 시에 버전 정보가 뜬다면 설치 완료된 상태입니다.
 
@@ -15,9 +15,17 @@ $ npm -v
 
 <br/>
 
-------
+**[Homebrew로 node.js 설치하기]**
 
-### 🚩 2. 프로젝트 구성하기
+- Homebrew를 이용하신다면 아래와 같이 설치하셔도 무관합니다.
+
+```
+$ brew install node@10
+```
+
+<br/>
+
+## 🚩 2. 프로젝트 구성하기
 
 * Desktop > **aws-reko-server** 폴더를 생성해주세요.
 
@@ -41,6 +49,10 @@ $ npm install
 
 ![npm_express](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/npm_express.png)
 
+---------
+
+
+
 <br/>
 
 #### ❗️2단계 : 추가 node module 설치하기
@@ -48,8 +60,12 @@ $ npm install
 * Recognition API에 필요한 추가 모듈을 설치하도록 하겠습니다.
 
 ```
-$ npm install fs-extra klaw-sync multer aws-sdk --save
+$ npm install fs-extra multer aws-sdk --save
 ```
+
+> - fs-extra : fs 모듈은 FileSystem의 약자로 파일 처리와 관련된 모듈입니다. 
+> - multer : 파일 업로드를 위해서 사용되는 multipart/form-data를 다루기 위한 node.js 미들웨어입니다. 이미지 업로드를 도와주는 모듈입니다.
+> - aws-sdk : node.js에서 AWS를 사용할 수 있는 모듈입니다. SDK를 사용하면 Amazon S3, Amazon EC2, DynamoDB 및 Amazon SWF를 포함하는 AWS 서비스를 위한 JavaScript 객체가 제공되므로 복잡하게 코드를 작성하지 않아도 됩니다.
 
 <br/>
 
@@ -65,13 +81,19 @@ $ npm start
 
 ![npm_start](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/npm_start.png)
 
+-----------
 
+
+
+<br/>
 
 #### ❗️3단계 : 프로젝트 열기
 
 * 앞서 다운받은 코드편집기를 통해 프로젝트(aws-reko-server)를 열어주세요!
 
 ![vscode](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/vscode.png)
+
+--------------
 
 <br/>
 
@@ -80,85 +102,6 @@ $ npm start
 - **routes 폴더 하위**에 아래의 파일들을 추가해주세요.
 
 ![routes](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/routes.png)
-
-<br/>
-
-* **import.js** 
-
-```javascript
-/*
- * Copyright 2013. Amazon Web Services, Inc. All Rights Reserved.
- * 
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *     http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
-**/
-
-// Load the SDK and UUID
-var config = require('./config')
-var AWS = require('aws-sdk');
-var fs = require('fs-extra');
-var path = require('path');
-
-AWS.config.region = config.region;
-var rekognition = new AWS.Rekognition({region: config.region});
-
-// AWS allows you to create separate collections of faces to search in. 
-// This creates the collection we'll use.
-function createCollection() {
-	// Index a dir of faces
-	rekognition.createCollection( { "CollectionId": "aws-reko-server" }, function(err, data) {
-	  if (err) {
-		console.log(err, err.stack); // an error occurred
-	  } else {
-		console.log(data);           // successful response
-	  }
-	});
-}
-
-// This loads a bunch of named faces into a db. It uses the name of the image as the 'externalId'
-// Reads from a sub folder named 'faces'
-function indexFaces() {
-	var klawSync = require('klaw-sync')
-	var paths = klawSync('./faces', { nodir: true, ignore: [ "*.json" ] });
-
-	paths.forEach((file) => {
-		console.log(file.path);
-		var p = path.parse(file.path);
-		var name = p.name.replace(/\W/g, '');
-		var bitmap = fs.readFileSync(file.path);
-
-		rekognition.indexFaces({
-		   "CollectionId": "aws-reko-server",
-		   "DetectionAttributes": [ "ALL" ],
-		   "ExternalImageId": name,
-		   "Image": { 
-			  "Bytes": bitmap
-		   }
-		}, function(err, data) {
-			if (err) {
-				console.log(err, err.stack); // an error occurred
-			} else {
-				console.log(data);           // successful response
-				fs.writeJson(file.path + ".json", data, err => {
-					if (err) return console.error(err)
-				});
-			}
-		});
-	});
-}
-
-createCollection();
-indexFaces();
-```
 
 <br/>
 
@@ -173,26 +116,37 @@ var multer  = require('multer');
 var AWS = require('aws-sdk');
 var fs = require('fs-extra');
 
+//파일을 저장할 경로 지정
 var upload = multer({ dest: './uploads' });
 
+//config.js에서 작성한 리전 정보를 설정합니다.
 AWS.config.region = config.region;
-var rekognition = new AWS.Rekognition({region: config.region});
+var rekognition = new AWS.Rekognition(
+	{
+		region: config.region
+	}
+);
 
-//Post - Rekognition을 이용한 얼굴 분석 API 
+//POST - Rekognition을 이용한 얼굴 분석 API 
 router.post('/api/rekognition', upload.single("image"), function (req, res, next) {
+	//클라이언트와 통신 시, 받아온 이미지 데이터를 변수로 저장합니다.
 	var bitmap = fs.readFileSync(req.file.path);
 
+	/* deteceFaces는 이미지내의 얼굴을 감지하는 메소드입니다.
+	Rekognition에서 제공됩니다.*/
 	rekognition.detectFaces({
+		//Rekognition에 전송할 요청 바디입니다.
 	 	"Image": { 
+			 //우리가 전송한 이미지 데이터를 value 값으로 넣어줍니다.
 	 		"Bytes": bitmap,
 		 },
 		 "Attributes": [
 			"ALL",
 		  ]
 	}, function(err, data) {
-	 	if (err) {
+	 	if (err) { //통신 실패
 	 		res.send(err);
-	 	} else {
+	 	} else { //통신 성공
 
 			/* 올바른 사진 분석을 하지 못했을 시 (인물 사진이 아닐 경우)에는 FaceDetail 값이 빈 배열로 오게 됩니다. 
 			그럴 시에 클라이언트에게 올바를 에러 처리를 할 수 있도록 아래와 같은 결과를 반환하도록 하였습니다.
@@ -226,7 +180,7 @@ var getBestEmotion = function(data) {
 	var MAX = 0;
 	var type;
 
-	for(var i=0;i<emotionList.length;i++){
+	for(var i = 0;i < emotionList.length; i++){
 		if(emotionList[i].Confidence > MAX) {
 			MAX = emotionList[i].Confidence;
 			type = emotionList[i].Type;
@@ -244,15 +198,12 @@ module.exports = router;
 * **config.js** 
 
 ```javascript
-module.exports.collectionName = "aws-reko-server";
-module.exports.region = "ap-northeast-2"; //리전 위치
+module.exports.region = "ap-northeast-2"; //CLI에서 설정했던 리전 위치
 ```
 
 <br/>
 
-----------
 
-<br/>
 
 ## 🚩 다음 목차
 

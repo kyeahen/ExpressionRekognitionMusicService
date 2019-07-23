@@ -25,6 +25,7 @@ extension APIService {
     아래의 메소드를 정의하여 조금더 편리하게 통신할 수 있도록 합니다.
      */
     static func url(_ path: String) -> String {
-        return "http:// EC2퍼블릭 DNS or IPv4 퍼블릭 IP을 넣어주세요 :3000/" + path
+//        return "http:// EC2퍼블릭 DNS or IPv4 퍼블릭 IP을 넣어주세요 :3000/" + path
+        return "http://localhost:3000/" + path
     }
 }

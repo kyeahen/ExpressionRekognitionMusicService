@@ -21,7 +21,7 @@ struct MusicService {
      */
     static func getMusicRecommandList(emotion: String, completion: @escaping ([Music]) -> Void) {
         
-        let URL = "http://ec2-13-125-219-247.ap-northeast-2.compute.amazonaws.com:3000/api/music?emotion=\(emotion)"
+        let URL = "http://13.125.219.247:3000/api/music?emotion=\(emotion)"
         
         Alamofire.request(URL, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseData() { res in
             switch res.result {

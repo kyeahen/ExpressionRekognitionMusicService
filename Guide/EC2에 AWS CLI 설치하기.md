@@ -72,6 +72,7 @@ $ curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zi
 **2. 패키지 압축 풀기**
 
 ```
+$ sudo apt install unzip
 $ unzip awscli-bundle.zip
 ```
 

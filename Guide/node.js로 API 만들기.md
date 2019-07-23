@@ -141,7 +141,7 @@ router.post('/api/rekognition', upload.single("image"), function (req, res, next
 	 		"Bytes": bitmap,
 		 },
 		 "Attributes": [
-			"ALL",
+			"ALL"
 		  ]
 	}, function(err, data) {
 	 	if (err) { //통신 실패

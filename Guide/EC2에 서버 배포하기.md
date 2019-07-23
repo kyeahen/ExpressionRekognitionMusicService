@@ -58,7 +58,6 @@ $ ssh -i [pem 파일 경로] ubuntu@[ec2 인스턴스의 퍼블릭 DNS]
 
 ```
 $ ls //파일이 업로드 되었는지 확인해보세요.
-$ sudo apt install unzip
 $ unzip aws-reko-sever.zip
 ```
 

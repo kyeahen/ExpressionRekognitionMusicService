@@ -50,9 +50,6 @@ $ ssh -i [키페어 파일 경로] ubuntu@[Ec2 인스턴스 퍼블릭 DNS]
 
 <br/>
 
-----------
-
-<br/>
 
 ## 🚩 EC2에 AWS CLI 설치하기
 
@@ -67,6 +64,7 @@ $ ssh -i [키페어 파일 경로] ubuntu@[Ec2 인스턴스 퍼블릭 DNS]
 // AWS CLI를 사용하기 위해서는 Python 2 버전 2.6.5+ 또는 Python 3 버전 3.3+이 필요합니다.
 $ sudo apt update
 $ sudo apt install python
+
 $ curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
 ```
 
@@ -95,6 +93,7 @@ $ sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
 
 ```
 $ aws configure
+
 AWS Access Key ID [None]: //자신의 Access Key
 AWS Secret Access Key [None]: //자신의 Secret Access Key
 Default region name [None]: ap-northeast-2
@@ -120,7 +119,6 @@ $ cat credentials
 
 ![cli-4](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/cli-4.png)
 
---------
 
 <br/>
 

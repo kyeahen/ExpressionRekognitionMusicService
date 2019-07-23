@@ -89,7 +89,7 @@ $ npm start
 
 #### ❗️3단계 : 프로젝트 열기
 
-* 앞서 다운받은 코드편집기를 통해 프로젝트(aws-reko-server)를 열어주세요!
+* 코드편집기를 통해 프로젝트(aws-reko-server)를 열어주세요!
 
 ![vscode](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/vscode.png)
 

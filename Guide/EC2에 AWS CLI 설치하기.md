@@ -64,6 +64,9 @@ $ ssh -i [키페어 파일 경로] ubuntu@[Ec2 인스턴스 퍼블릭 DNS]
 **1.  AWS CLI 번들 설치 관리자 다운로드하기**
 
 ```
+// AWS CLI를 사용하기 위해서는 Python 2 버전 2.6.5+ 또는 Python 3 버전 3.3+이 필요합니다.
+$ sudo apt update
+$ sudo apt install python
 $ curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
 ```
 

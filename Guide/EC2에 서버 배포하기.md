@@ -92,6 +92,10 @@ $ npm start
 * **http:// [ec2 퍼블릭 DNS or IPv4 퍼블릭 IP] :3000/api/rekognition** 으로 접속해보세요!
 
   배포가 잘되었다면 터미널에서 로그를 확인할 수 있습니다.
+  
+  ❗️아래와 같이 **404 에러**가 발생하는 것이 정상입니다! <br/>
+    API 형식에 맞지 않게 이미지 파일을 업로드 하지 않아 발생한 정상적인 에러입니다.<br/>
+    단순히 서버가 잘 배포되었는지 확인하기 위한 과정입니다! <br/>
 
 ![ec2_log](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/ec2_log.png)
 

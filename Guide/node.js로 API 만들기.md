@@ -49,6 +49,18 @@ $ npm install
 
 ![npm_express](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Guide/images/npm_express.png)
 
+<br/>
+
+- 위의 과정에서 에러가 발생하신다면 아래의 명령어를 사용해주세요.
+
+```
+$ sudo npm install -g express-generator 
+$ express
+$ npm install
+```
+
+
+
 ---------
 
 
@@ -228,8 +240,11 @@ $ npm start
 
 
 ```
-$ cd 서버 프로젝트 파일 경로
-$ zip -r ../프로젝트 파일명 ./ -x \*node_modules\*
+//aws-reko-server는 자신이 만든 서버 프로젝트 파일명입니다. 
+//혹시 다르게 이름을 설정하신 분들은 알맞는 이름으로 바꿔주세요.
+
+$ cd aws-reko-server
+$ zip -r ../aws-reko-server ./ -x \*node_modules\*
 ```
 
 <br/>

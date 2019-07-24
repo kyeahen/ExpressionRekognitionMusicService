@@ -109,11 +109,13 @@ struct ImageUploadService: APIService {
         //앞서 APIService에 정의했던 메소드를 사용하여 경로만 추가합니다.
         let URL = url("api/rekognition")
 
+      	//업로드하는 이미지는 Data 인스턴스로 변환시켜야 합니다.
         let imageData = image.jpegData(compressionQuality: 0.3)
         
-        //MultipartFormData 통신
+        //multipart, stream, file, data method를 사용하여 파일을 업로드 합니다.
         Alamofire.upload(multipartFormData: { (multipartFormData) in
             
+            //JPEG 데이터 부분(imageData)을 MIME multipart 요청으로 변환하여 전송합니다.                               
             multipartFormData.append(imageData!, withName: "image", fileName: "photo.jpg", mimeType: "image/jpeg")
             
         }, to: URL, method: .post, headers: nil) { (encodingResult) in
@@ -122,9 +124,10 @@ struct ImageUploadService: APIService {
             case .success(request: let upload, streamingFromDisk: _, streamFileURL: _) :
                 
                 upload.responseData(completionHandler: {(res) in
+                                                        
                     switch res.result {
                         
-                    //서버 연결 성공
+                    //업로드 성공
                     case .success :
                         
                         /* 아래의 if-let 구문은 옵셔널 타입을 안전하게 추출하기 위해 사용합니다.
@@ -132,6 +135,8 @@ struct ImageUploadService: APIService {
                          해당 value 값은 data 형의 값이 있을 수도 없을 수도 있는 상태이기 때문에
                          안전하게 옵셔널 해제를 해주기 위해서 아래와 같은 구문을 사용하였습니다.
                          */
+                      
+                      	//결과값이 있는지 확인합니다.
                         if let value = res.result.value {
                             
                             /* SwfityJson 라이브러리를 사용하여
@@ -140,7 +145,8 @@ struct ImageUploadService: APIService {
                             
                             completion(emotion ?? "")
                         }
-                        
+                     
+                    //업로드 실패  
                     case .failure(let err):
                         print(err.localizedDescription)
                     }
@@ -150,6 +156,7 @@ struct ImageUploadService: APIService {
                 
             //서버 연결 실패
             case .failure(let err):
+              	//에러를 출력해줍니다.
                 print(err.localizedDescription)
             }
         }
@@ -220,12 +227,14 @@ struct MusicService {
                  해당 value 값은 data 형의 값이 있을 수도 없을 수도 있는 상태이기 때문에
                  안전하게 옵셔널 해제를 해주기 위해서 아래와 같은 구문을 사용하였습니다.
                 */
+              
+              	//결과값이 있는지 확인합니다.
                 if let value = res.result.value {
                     
                     let decoder = JSONDecoder()
                     
                     do {
-                        //music에 맞게 디코딩을 합니다.
+                        //Codable로 정의된 music 모델에 맞게 디코딩을 합니다.
                         let musicData = try decoder.decode([Music].self, from: value)
                         completion(musicData)
                         

@@ -2,6 +2,11 @@
 
 ## 얼굴분석을 통한 표정에 알맞은 음악 추천 서비스
 
+❇️ 추가 내용
+- **표정에 알맞은 음악 추천 API** 추가했습니다. [이동](https://github.com/kyeahen/ExpressionRekognitionMusicService/blob/master/Server/music-server/routes/index.js)
+
+----------
+  
 ### 🚩 사전 준비 사항
 
 원할한 세미나 진행을 위해 사전 준비를 꼭! 해오시길 바랍니다.

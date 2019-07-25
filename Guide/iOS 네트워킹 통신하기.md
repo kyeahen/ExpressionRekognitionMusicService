@@ -83,7 +83,7 @@ extension APIService {
 <br/>
 
 * **ImageUploadService.swift** 
-  - 표정 인식 API 명세서 [이동](https://github.com/kyeahen/ExpressionRekognitionMusicService/wiki/%EC%9D%8C%EC%95%85-%EC%B6%94%EC%B2%9C-API)
+  - 표정 인식 API 명세서 [이동]([https://github.com/kyeahen/ExpressionRekognitionMusicService/wiki/%ED%91%9C%EC%A0%95-%EC%9D%B8%EC%8B%9D-API](https://github.com/kyeahen/ExpressionRekognitionMusicService/wiki/표정-인식-API))
   - 사진을 업로드하면 표정을 분석하여 가장 높은 표정 값을 반환받는 네트워크 통신입니다.
 
 ```swift
